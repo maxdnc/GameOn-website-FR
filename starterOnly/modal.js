@@ -218,7 +218,7 @@ const formRules = {
     test: (value) => !isNaN(value) && value >= 0 && value !== '',
     errorMessage: 'Veuillez entrer un nombre valide.',
   },
-  checkbox1: {
+  checkboxTerm: {
     test: (value) => value.checked,
     errorMessage:
       'Vous devez vérifier que vous acceptez les termes et conditions.',
