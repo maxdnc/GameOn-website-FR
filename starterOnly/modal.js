@@ -119,11 +119,11 @@ class FormValidator {
       this.hideError(locationCheckBoxes[0]);
     }
 
-    // Get checkbox2
-    const checkbox2 = document.getElementById('checkbox2');
+    // Get checkboxNextEvent
+    const checkboxNextEvent = document.getElementById('checkboxNextEvent');
 
     // Store its checked status and value
-    this.fieldValues['checkbox2'] = checkbox2.checked;
+    this.fieldValues['checkboxNextEvent'] = checkboxNextEvent.checked;
 
     for (const fieldId in this.fields) {
       // Get the field element and its validation rules
