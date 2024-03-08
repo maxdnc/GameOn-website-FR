@@ -8,6 +8,8 @@ class ModalManager {
     this.closeButtons = this.selectElements(closeButtonsIds);
     //Select the open buttons
     this.openButtons = this.selectElements(openButtonsIds);
+
+    this.buttonEvents = this.buttonEvents();
   }
 
   // Method to select elements
@@ -57,9 +59,6 @@ const signUpModal = new ModalManager('.bground', '.modal-btn', [
   '.close',
   '#valid-btn-close',
 ]);
-
-// Bind the click events to the open and close buttons
-signUpModal.buttonEvents();
 
 // Form validation
 const formValidator = new FormValidator('reserveForm', formRules);
