@@ -8,11 +8,7 @@ function editNav() {
     x.className = 'topnav';
   }
 }
-
-// DOM Elements
-const modalbg = document.querySelector('.bground');
-const modalBtn = document.querySelectorAll('.modal-btn');
-const formData = document.querySelectorAll('.formData');
+document.getElementById('nav-icon').addEventListener('click', editNav);
 
 class ModalManager {
   constructor(modalId, openButtonsIds, closeButtonsIds) {
