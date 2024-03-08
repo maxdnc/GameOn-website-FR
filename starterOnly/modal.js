@@ -1,15 +1,5 @@
 import FormValidator, { formRules } from './form.js';
 
-function editNav() {
-  var x = document.getElementById('myTopnav');
-  if (x.className === 'topnav') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'topnav';
-  }
-}
-document.getElementById('nav-icon').addEventListener('click', editNav);
-
 class ModalManager {
   constructor(modalId, openButtonsIds, closeButtonsIds) {
     //Select the Modal
@@ -73,3 +63,15 @@ signUpModal.buttonEvents();
 
 // Form validation
 const formValidator = new FormValidator('reserveForm', formRules);
+
+// nav  bar responsive
+
+function editNav() {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'topnav';
+  }
+}
+document.getElementById('nav-icon').addEventListener('click', editNav);
