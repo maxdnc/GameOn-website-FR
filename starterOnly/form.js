@@ -4,7 +4,7 @@ class FormValidator {
     this.fields = fields;
     this.fieldValues = {};
 
-    this.form.addEventListener('submit', async (e) => {
+    this.form.addEventListener('submit', (e) => {
       e.preventDefault();
       this.validateFormFields();
       console.log(this.fieldValues);
